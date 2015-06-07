@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
-<s:include value="header.jsp"></s:include>
+<s:include value="header.html"></s:include>
 
 <html>
 <head>

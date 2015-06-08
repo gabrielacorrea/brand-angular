@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" ng-app="brandApp">
 <head>
     <meta charset="UTF-8">
     <title>Brand project with Angular</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/WebContent/resources/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href="/app/resources/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="app/resources/css/normalize.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <script src="/WebContent/resources/js/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="app/resources/css/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="app/resources/css/github-light.css" media="screen">
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/app/resources/js/bootstrap.js"></script>
+    <script src="/app/resources/js/bootstrap.min.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/app/resources/js/controller.js"></script>
+
 </head>
-<body>
+<body ng-controller="SearchProductsCtrl">
 <section class="page-header">
     <h1 class="project-name">Brand project with Angular</h1>
 
     <h2 class="project-tagline"></h2>
     <a href="https://github.com/gabrielacorrea/brand-angular" class="btn">View on GitHub</a>
-    <a href="WebContent/contact.html" class="btn">Contact</a>
-    <a href="WebContent/aboutus.html" class="btn">About Us</a>
-    <a href="WebContent/postagem.html" class="btn">New promotion</a>
+    <a href="app/contact.html" class="btn">Contact</a>
+    <a href="app/aboutus.html" class="btn">About Us</a>
+    <a href="app/postagem.html" class="btn">New promotion</a>
 </section>
 
 <section class="main-content">
@@ -58,7 +63,7 @@
     <div class="row">
         <div class="col-md-7">
             <a href="#" class="thumbnail">
-                <img class="img-responsive img-rounded" src="/WebContent/resources/img/calca.JPG">
+                <img class="img-responsive img-rounded" src="/app/resources/img/calca.JPG">
             </a>
         </div>
         <div class="col-md-5">

@@ -15,11 +15,9 @@ describe('SearchProductsCtrl', function () {
         ctrl = $controller('PhoneDetailCtrl', {$scope: scope});
     }));
 
-
     it('should fetch phone detail', function() {
         expect(scope.brand).toBeUndefined();
         $httpBackend.flush();
         expect(scope.phone).toEqual({brand:'Rabush'});
     });
-
 });

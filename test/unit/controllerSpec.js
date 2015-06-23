@@ -7,17 +7,16 @@ describe('SearchProductsCtrl', function () {
 
     beforeEach(module('brandApp'));
 
-    beforeEach(inject(function(_$httpBackend_, $rootScope, $routeParams, $controller) {
+    beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
         $httpBackend = _$httpBackend_;
         $httpBackend.expectGET('/app/resources/products.json').respond([{brand:'Rabush'}]);
 
         scope = $rootScope.$new();
-        ctrl = $controller('PhoneDetailCtrl', {$scope: scope});
+        ctrl = $controller('SearchProductsCtrl', {$scope: scope});
     }));
 
-    it('should fetch phone detail', function() {
-        expect(scope.brand).toBeUndefined();
-        $httpBackend.flush();
-        expect(scope.phone).toEqual({brand:'Rabush'});
+    it('should fetch products details', function() {
+        expect(scope.productsList).toBeDefined();
+        expect(scope.productsList).toEqual({brand:'Rabush'});
     });
 });

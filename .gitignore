@@ -5,3 +5,4 @@ Trademark.iml
 lib/
 target/
 node_modules/
+npm-debug.log

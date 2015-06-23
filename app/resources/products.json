@@ -1,3 +1,10 @@
-{
-  "brand": "Rabush"
-}
+[
+  {
+  "brand": "Rabush",
+    "typeProduct": "pant"
+  },
+  {
+  "brand": "Renner",
+    "typeProduct": "jaquet"
+  }
+]

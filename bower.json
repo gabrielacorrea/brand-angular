@@ -1,8 +1,8 @@
 {
   "name": "brand-angular",
-  "description": "Project of brands using Angular",
+  "description": "Brand project using Angular",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "homepage": "https://github.com/gabrielacorrea/brand-angular",
   "license": "MIT",
   "private": true,
   "dependencies": {

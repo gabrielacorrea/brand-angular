@@ -1,70 +1,58 @@
-<!DOCTYPE html>
 <html lang="en-us" ng-app="brandApp">
 <head>
     <meta charset="UTF-8">
     <title>Brand project with Angular</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/app/resources/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="app/resources/css/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="app/resources/css/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="app/resources/css/github-light.css" media="screen">
-    <script language="javascript" src="node_modules/requirejs/require.js" type="text/javascript"> </script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/app/resources/js/bootstrap.js"></script>
-    <script src="/app/resources/js/bootstrap.min.js"></script>
     <script src="/bower_components/angular/angular.js"></script>
     <script src="/app/resources/js/controller.js"></script>
-
 </head>
 <body ng-controller="SearchProductsCtrl">
-<section class="page-header">
-    <h1 class="project-name">Brand project with Angular</h1>
+<div>
+    <h1>Brand project with Angular</h1>
 
-    <h2 class="project-tagline"></h2>
-    <a href="https://github.com/gabrielacorrea/brand-angular" class="btn">View on GitHub</a>
-</section>
+    <h2>
+        <a href="https://github.com/gabrielacorrea/brand-angular" class="btn">View on GitHub</a>
+    </h2>
+</div>
 
-<section class="main-content">
-    <h3>
-        <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span
-                class="octicon octicon-link"></span></a>Pesquisa de postagens</h3>
-    <div class="row">
-        <div class="col-md-12">
-            <form action="search" class="form-inline">
-                <div class="form-group">
-                    <label name="marcaSelecionada" for="marcaSelecionada">Marca</label>
-                    <select name="marcaSelecionada" id="marcaSelecionada" class="form-control">
-                        <option value="-1">Selecione...</option>
-                        <option value="marca">Marca</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label name="tipoSelecionado" for="tipoSelecionado">Tipo:</label>
-                    <select name="tipoSelecionado" id="tipoSelecionado" class="form-control">
-                        <option value="-1">Selecione...</option>
-                        <option value="tipo">Tipo</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label name="lojaSelecionada" for="lojaSelecionada">Loja:</label>
-                    <select name="lojaSelecionada" id="lojaSelecionada" class="form-control">
-                        <option value="-1">Selecione...</option>
-                        <option value="loja">Loja</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-default">Pesquisar</button>
-            </form>
-        </div>
+<div>
+    <h3><a id="welcome-to-github-pages" href="#welcome-to-github-pages"></a>Pesquisa de postagens</h3>
+    <div>
+        <form action="search">
+            <div>
+                <label for="marcaSelecionada">Marca</label>
+                <select name="marcaSelecionada" id="marcaSelecionada">
+                    <option value="marca1">Marca1</option>
+                    <option value="marca2">Marca2</option>
+                </select>
+            </div>
+            <div>
+                <label for="tipoSelecionado">Tipo:</label>
+                <select name="tipoSelecionado" id="tipoSelecionado">
+                    <option value="tipo1">Tipo1</option>
+                    <option value="tipo2">Tipo2</option>
+                </select>
+            </div>
+            <div>
+                <label for="lojaSelecionada">Loja:</label>
+                <select name="lojaSelecionada" id="lojaSelecionada">
+                    <option value="loja1">Loja1</option>
+                    <option value="loja2">Loja2</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Pesquisar</button>
+            </div>
+        </form>
     </div>
-
-    <div class="row">
-        <div class="col-md-7">
-            <a href="#" class="thumbnail">
-                <img class="img-responsive img-rounded" src="/app/resources/img/calca.JPG">
+    <div>
+        <div>
+            <a href="#">
+                <img src="/app/resources/img/calca.JPG">
             </a>
         </div>
-        <div class="col-md-5">
+        <div>
             <h4>Tipo de vestuário - Marca</h4>
             <p>Pode ser encontrado em Nome da loja</p>
             <p>Postado em Data por Usuário</p>
@@ -72,15 +60,14 @@
         </div>
     </div>
 
-    <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/gabrielacorrea/brand-angular">Brand project with
+    <footer>
+        <span><a href="https://github.com/gabrielacorrea/brand-angular">Brand project with
             Angular</a> is maintained by <a href="https://github.com/gabrielacorrea">gabrielacorrea</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a
                 href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a
                 href="https://twitter.com/jasonlong">Jason Long</a>.</span>
     </footer>
-</section>
+</div>
 </body>
 </html>
-
